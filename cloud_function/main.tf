@@ -1,5 +1,5 @@
 locals {
-  zip_name = "${var.path}_code_${var.commit_sha}.zip"
+  zip_name = "${var.path}_${var.commit_sha}.zip"
 }
 
 resource "google_storage_bucket_object" "object" {
